@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+  font-size: 16px;
+}
+
+.todo {
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 10px 26px 0 rgba(0, 0, 0, 0.75);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  padding: 15px;
+  border-bottom: thin solid #ccc;
+}
+
+.todo-list > .flex-item > .flex-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input label {
+  padding-left: 10px;
+}
+
+.title {
+  text-align: left;
+}
+
+.todo-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  font-size: 15px;
+}
+
+.add-task .task-input {
+  width: 85%;
+  font-style: italic;
+  border: none;
+  border-bottom: thin solid #ccc;
+}
+
+.carriageReturn {
+  font-size: 25px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: thin solid #ccc;
+}
+
+.clear-completed {
+  background-color: rgb(239, 239, 239);
+  border: none;
+  margin-bottom: 0;
+  color: rgb(72, 72, 72);
+}
+
+.disabled {
+  display: none;
+}
+
+.task-desc {
+  display: inline;
+}
+
+.checked {
+  text-decoration: line-through;
+}
